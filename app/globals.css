@@ -1,7 +1,4 @@
 @import "tailwindcss";
-body{
-  background-color: #000;
-}
 .not-found {
   .cls-1 {
     fill: #d6b49a;
