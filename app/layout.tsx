@@ -6,12 +6,17 @@ const ad = ADLaM_Display({
 });
 export default function RootLayout({
   children,
+  modal,
 }: Readonly<{
   children: React.ReactNode;
+  modal: React.ReactNode;
 }>) {
   return (
     <html suppressHydrationWarning lang='en' className={ad.className}>
-      <body> {children}</body>
+      <body>
+        {children}
+        {modal}
+      </body>
     </html>
   );
 }
