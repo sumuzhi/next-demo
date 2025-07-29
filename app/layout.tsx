@@ -1,16 +1,12 @@
 import "./globals.css";
-import { ADLaM_Display } from "next/font/google";
-const ad = ADLaM_Display({
-  subsets: ["latin"],
-  weight: "400",
-});
+ 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning lang='en' className={ad.className}>
+    <html suppressHydrationWarning lang='en' >
       <body> {children}</body>
     </html>
   );
